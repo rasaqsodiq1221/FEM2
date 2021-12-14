@@ -15,16 +15,21 @@
 .card1 {
   background-color: hsl(31, 77%, 52%);
   padding: 50px;
+  width: 330px;
+  border-radius: 10px 0px 0px 10px;
 }
   
 .card2 {
   background-color: hsl(184, 100%, 22%);
   padding: 50px;
+  width: 330px;
 }
 
 .card3 {
   background-color: hsl(179, 100%, 13%);
   padding: 50px;
+  width: 330px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 h1 {
@@ -88,4 +93,31 @@ p {
   border-radius: 30px;
   color: hsl(0, 0%, 95%);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 950px ) {
+  body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 100px 0px;
+    
+  }
+  .card1 {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card3 {
+    border-radius: 0px 0px 10px 10px;
+  }
+
 }
